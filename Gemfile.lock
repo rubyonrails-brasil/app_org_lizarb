@@ -1,0 +1,41 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    connection_pool (2.3.0)
+    dotenv (2.8.1)
+    lizarb (1.0.0)
+      colorize (~> 0.8)
+      dotenv (~> 2.8)
+      zeitwerk (~> 2.6)
+    nio4r (2.5.8)
+    puma (5.6.5)
+      nio4r (~> 2.0)
+    rack (3.0.0)
+    rackup (0.2.2)
+      rack (>= 3.0.0.beta1)
+      webrick
+    redis (5.0.5)
+      redis-client (>= 0.9.0)
+    redis-client (0.10.0)
+      connection_pool
+    sqlite3 (1.5.3-x86_64-linux)
+    webrick (1.7.0)
+    zeitwerk (2.6.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  lizarb (~> 1.0)
+  puma (~> 5.6)
+  rack (~> 3.0)
+  rackup (~> 0.2.2)
+  redis (~> 5.0)
+  sqlite3 (~> 1.5)
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.3.22
