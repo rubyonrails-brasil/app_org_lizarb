@@ -7,6 +7,7 @@ ruby File.read(".ruby-version").strip
 group :default do
   gem "lizarb", "~> 1.0"
   # gem "lizarb", github: "rubyonrails-brasil/lizarb"
+  gem "commonmarker", "~> 0.23.6"
 end
 
 group :dev do

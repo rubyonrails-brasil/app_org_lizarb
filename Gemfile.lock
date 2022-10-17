@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    commonmarker (0.23.6)
     connection_pool (2.3.0)
     dotenv (2.8.1)
     lizarb (1.0.0)
@@ -27,6 +28,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  commonmarker (~> 0.23.6)
   lizarb (~> 1.0)
   puma (~> 5.6)
   rack (~> 3.0)

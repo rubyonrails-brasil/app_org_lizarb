@@ -4,16 +4,16 @@ class RootRequestTest < AppRequestTest
     assert subject_class == RootRequest
   end
 
-  test :actions, :root do
+  test :actions, :index do
     env = {
-      "LIZA_ACTION" => "root",
+      "LIZA_ACTION" => "index",
     }
 
     status, headers, body = subject_class.call env
 
     assert status == 200
     assert headers["Framework"].to_s.start_with? "Liza"
-    assert body.first.include? "Ruby Works"
+    assert body.first.include? "Getting Started"
   end
 
   test :actions, :other do
