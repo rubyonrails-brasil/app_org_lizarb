@@ -13,7 +13,7 @@ A Liza 1.0 conta com 4 sistemas-padrao, e soma 190 testes.
 
 ## Sistema Developer
 
-Compartimentaliza e testa interacoes valiosas para a equipe como executores de comandos, gerenciadores de logs, geradores de codigo, e terminais de acesso.
+Compartimentaliza e testa interacoes valiosas para a equipe como executores de comandos, gerenciadores de logs, metricas de execucao (benchmark), geradores de codigo, e consoles de acesso (IRB e Pry).
 
 <img style="max-width:100%;" src="/pill_system_dev.png">
 
