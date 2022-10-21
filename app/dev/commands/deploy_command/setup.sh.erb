@@ -1,0 +1,13 @@
+mkdir -p <%= @site %>
+sudo rm /etc/nginx/sites-enabled/<%= @site %>.nginx
+sudo ln -s /home/<%= @user %>/<%= @site %>.nginx /etc/nginx/sites-enabled/<%= @site %>.nginx
+
+echo "/home/<%= @user %>"
+ls
+
+echo "/etc/nginx/sites-enabled"
+ls /etc/nginx/sites-enabled
+
+echo "restart"
+sudo service nginx restart
+sudo service nginx status

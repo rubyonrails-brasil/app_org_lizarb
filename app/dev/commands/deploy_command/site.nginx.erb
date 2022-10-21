@@ -1,0 +1,13 @@
+server {
+  listen <%= @port || 80 %>;
+  listen [::]:<%= @port || 80 %>;
+
+  server_name <%= @host %>;
+
+  root /home/<%= @user %>/<%= @site %>;
+  index index.html;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
